@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --theme-primary: #ff2238;
+    --theme-accent: #ff4d6d;
+    --theme-bg: #050203;
+    --theme-card: #090305;
+    --theme-border: rgba(230, 30, 56, 0.45);
+    --theme-border-bright: #ff2238;
+    --theme-glow: rgba(255, 34, 56, 0.5);
+    --theme-glow-soft: rgba(255, 34, 56, 0.15);
+  }
+
+  [data-theme='crimson-matrix'] {
+    --theme-primary: #ff2238;
+    --theme-accent: #ff4d6d;
+    --theme-border: rgba(230, 30, 56, 0.45);
+    --theme-border-bright: #ff2238;
+    --theme-glow: rgba(255, 34, 56, 0.4);
+    --theme-glow-soft: rgba(255, 34, 56, 0.15);
+  }
+
+  [data-theme='lime-cyber'] {
+    --theme-primary: #39ff14;
+    --theme-accent: #76ba1b;
+    --theme-border: rgba(57, 255, 20, 0.45);
+    --theme-border-bright: #39ff14;
+    --theme-glow: rgba(57, 255, 20, 0.4);
+    --theme-glow-soft: rgba(57, 255, 20, 0.15);
+  }
+
+  [data-theme='arc-cyan'] {
+    --theme-primary: #00f2ff;
+    --theme-accent: #38bdf8;
+    --theme-border: rgba(0, 242, 255, 0.45);
+    --theme-border-bright: #00f2ff;
+    --theme-glow: rgba(0, 242, 255, 0.4);
+    --theme-glow-soft: rgba(0, 242, 255, 0.15);
+  }
+
+  [data-theme='cyber-amber'] {
+    --theme-primary: #ff9900;
+    --theme-accent: #fbbf24;
+    --theme-border: rgba(255, 153, 0, 0.45);
+    --theme-border-bright: #ff9900;
+    --theme-glow: rgba(255, 153, 0, 0.4);
+    --theme-glow-soft: rgba(255, 153, 0, 0.15);
+  }
+
+  body {
+    background-color: #040102;
+    color: #e2e8f0;
+    font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow: hidden;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', monospace, sans-serif;
+}
+
+.font-rajdhani {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.font-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Sci-Fi Border Panel */
+.stonic-panel {
+  background: #080305;
+  border: 1px solid var(--theme-border);
+  border-radius: 18px;
+  position: relative;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9), inset 0 0 15px var(--theme-glow-soft);
+}
+
+.stonic-panel-glow {
+  box-shadow: 0 0 20px var(--theme-glow), inset 0 0 15px var(--theme-glow-soft);
+}
+
+/* Octagonal Terminate Button */
+.btn-terminate {
+  clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(230, 30, 56, 0.4);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2238;
+}

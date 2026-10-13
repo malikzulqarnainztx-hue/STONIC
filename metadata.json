@@ -1,0 +1,6 @@
+{
+  "name": "Stonic AI - JARVIS Sci-Fi Desktop Experience",
+  "description": "Futuristic sci-fi desktop AI assistant and autonomous operating system inspired by Inventor Usman's Stonic AI, featuring voice control, multi-agent workflows, and holographic HUD.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
